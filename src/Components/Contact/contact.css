@@ -128,9 +128,11 @@
     margin: 60px 100px;
 }
 
-.contact-title h1{
+.contact-title h1 {
     padding: 0px 0px;
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 .contact-title img{
     display: none;
@@ -149,10 +151,10 @@
     font-weight: 600;
 
 }
-.contact-left p{
-    min-width: 300px;
-    font-size: 16px;
-    line-height: 25px;
+.contact-left p {
+    min-width: 0;
+    font-size: 18px;
+    line-height: 24px;
 }
 .contact-details{
     gap: 20px;
@@ -166,14 +168,14 @@
     font-size: 20px;
 }
 .contact-right input{
-    width: 400px;
-    height: 78px;
+    width: 250px;
+    height: 60px;
     padding-left: 20px;
     border-radius: 20px;
     font-size: 18px;
 }
 .contact-right textarea{
-    width: 300px;
+    width: 250px;
     border: none;
     padding: 20px;
     font-size: 18px;

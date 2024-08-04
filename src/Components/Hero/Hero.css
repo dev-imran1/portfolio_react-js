@@ -4,8 +4,10 @@
     flex-direction: column;
     gap: 35px;
 }
-.hero img{
+.hero img {
     margin-top: 150px;
+    border-radius: 50%;
+    border: 2px solid crimson;
 }
 .hero h1{
     text-align: center;

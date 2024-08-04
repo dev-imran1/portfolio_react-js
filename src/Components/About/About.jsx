@@ -7,11 +7,11 @@ const About = () => {
     <div id='about' className='about'>
       <div className="about-title">
         <h1>About me</h1>
-        <img src={avatar} alt="theme_pattern" />
+        {/* <img src={avatar} alt="theme_pattern" /> */}
       </div>
       <div className="about-sections">
         <div className="about-left">
-            <img src={avatar} alt="profile image" />
+            {/* <img src={avatar} alt="profile image" /> */}
         </div>
         <div className="about-right">
             <div className="about-para">

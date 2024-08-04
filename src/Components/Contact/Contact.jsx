@@ -26,6 +26,7 @@ const Contact = () => {
 
     if (res.success) {
       alert(res.message)
+      console.log(res)
     }
   };
 
