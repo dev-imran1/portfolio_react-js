@@ -5,7 +5,7 @@ import arrow_icon from "../../assets/arrow_right.svg";
 import theme_pattern from "../../assets/service.svg";
 const Service = () => {
   return (
-    <div className="services">
+    <div id="service" className="services">
       <div className="services-title">
         <h1>My Services</h1>
           <img src={arrow_icon} alt="" />

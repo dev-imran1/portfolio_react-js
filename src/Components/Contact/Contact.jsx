@@ -6,8 +6,31 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5d37c7bf-c4ab-48b4-bd19-73372bbe642a");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(res.message)
+    }
+  };
+
   return (
-    <div className="contace">
+    <div onSubmit={onSubmit} id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
@@ -16,7 +39,7 @@ const Contact = () => {
         <div className="contact-left">
           <h1>Let's talk</h1>
           <p>
-            I'm currently avaliable to take on new poroject, so feel free the
+            I'm currently avaliable to take on new poroject, so feel free the .I'm currently avaliable to take on new poroject, so feel free the
           </p>
           <div className="contact-details">
             <div className="contact-detail">
